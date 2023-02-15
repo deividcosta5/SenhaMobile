@@ -67,6 +67,7 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+Mobile/Android/Debug
 Mobile/Android/Debug/AndroidManifest.xml
 Mobile/Android/Debug/colors.xml
 Mobile/Android/Debug/provider_paths.xml
