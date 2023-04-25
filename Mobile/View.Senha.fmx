@@ -1,0 +1,61 @@
+object frmSenha: TfrmSenha
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 531
+  ClientWidth = 344
+  Fill.Color = xFF5E73E1
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object RectBackground: TRectangle
+    Align = Client
+    Corners = [TopLeft, TopRight]
+    Fill.Color = xFFF5F7FA
+    Margins.Top = 15.000000000000000000
+    Size.Width = 344.000000000000000000
+    Size.Height = 451.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Stroke.Thickness = 0.000000000000000000
+    XRadius = 25.000000000000000000
+    YRadius = 25.000000000000000000
+    object ListBoxSenha: TListBox
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 324.000000000000000000
+      Size.Height = 439.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 324.000000000000000000
+      Viewport.Height = 439.000000000000000000
+    end
+  end
+  object txtSenha: TText
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 15.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 334.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Senha: XXX'
+    TextSettings.Font.Family = 'SF Pro Text'
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Leading
+  end
+end

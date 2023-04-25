@@ -1,0 +1,63 @@
+object FrameSenha: TFrameSenha
+  Align = Client
+  Size.Width = 360.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  object rectBackground: TRectangle
+    Align = Client
+    Fill.Color = xFFF5F7FA
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 350.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object txtSenha: TText
+        Align = Top
+        HitTest = False
+        Margins.Left = 15.000000000000000000
+        Position.X = 15.000000000000000000
+        Size.Width = 335.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Acolhimento - Sala 2'
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF474F5A
+        TextSettings.HorzAlign = Leading
+      end
+      object txrDataHora: TText
+        Align = Top
+        HitTest = False
+        Margins.Left = 15.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 33.000000000000000000
+        Size.Width = 335.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        Text = '18/02/2023 19:05:00'
+        TextSettings.Font.Family = 'SF Pro Text'
+        TextSettings.FontColor = xFF5E73E1
+        TextSettings.HorzAlign = Leading
+      end
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 2.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.200000002980232200
+      Opacity = 0.200000002980232200
+      ShadowColor = claBlack
+    end
+  end
+end

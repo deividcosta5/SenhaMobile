@@ -1,0 +1,12 @@
+127.0.0.1 [01/abril/2023 02:05:29.090] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 405 18
+127.0.0.1 [01/abril/2023 02:05:42.676] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 405 18
+127.0.0.1 [01/abril/2023 02:06:13.536] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 500 23
+127.0.0.1 [01/abril/2023 02:06:38.693] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 500 137
+127.0.0.1 [01/abril/2023 02:07:59.992] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 500 117
+127.0.0.1 [01/abril/2023 02:10:35.663] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1
+127.0.0.1 [01/abril/2023 02:11:38.019] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1
+127.0.0.1 [01/abril/2023 02:12:21.407] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1
+127.0.0.1 [01/abril/2023 02:12:22.775] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1
+127.0.0.1 [01/abril/2023 02:15:54.528] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1
+127.0.0.1 [01/abril/2023 02:15:58.648] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1
+127.0.0.1 [01/abril/2023 02:16:00.713] PostmanRuntime/7.31.3 "POST /v1/registrarsenha HTTP/1.1" 201 -1

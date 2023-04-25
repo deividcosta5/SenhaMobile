@@ -38,7 +38,7 @@ implementation
 
 {$R *.fmx}
 
-uses View.Camera;
+uses View.Camera, RESTRequest4D, System.JSON, DataModule.Global, View.Clientes, Commons.Global;
 
 procedure TfrmQRCode.CameraComponentSampleBufferReady(Sender: TObject;
   const ATime: TMediaTime);
@@ -100,8 +100,10 @@ begin
       if ReadResult <> nil then
       begin
         CameraComponent.Active := False;
-        //Codigo := ReadResult.Text;
-        ShowMessage(ReadResult.Text);
+        Codigo := ReadResult.Text;
+        //ShowMessage(ReadResult.Text);
+        ShowMessage(DataModuleGlobal.GetSenha(StrToIntDef(Codigo,0), frmHospital.ClienteSelecionado.ID, TokenDevice).ToString);
+
       end;
     except on E: Exception do
       txtErro.Text := E.Message;

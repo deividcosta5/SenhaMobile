@@ -1,0 +1,1 @@
+127.0.0.1 [19/março/2023 20:51:53:992] "POST /v1/registrarsenha HTTP/1.1" 200 {"error":"Erro: Informe SENHA ou TOKEN inválidos"}

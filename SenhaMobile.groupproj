@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7F2A3F91-232D-4C13-A9C4-42E16E61D0FC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Mobile\SistemaSenhaMobile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="API\API_SenhaMobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SistemaSenhaMobile">
+        <MSBuild Projects="Mobile\SistemaSenhaMobile.dproj"/>
+    </Target>
+    <Target Name="SistemaSenhaMobile:Clean">
+        <MSBuild Projects="Mobile\SistemaSenhaMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SistemaSenhaMobile:Make">
+        <MSBuild Projects="Mobile\SistemaSenhaMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="API_SenhaMobile">
+        <MSBuild Projects="API\API_SenhaMobile.dproj"/>
+    </Target>
+    <Target Name="API_SenhaMobile:Clean">
+        <MSBuild Projects="API\API_SenhaMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="API_SenhaMobile:Make">
+        <MSBuild Projects="API\API_SenhaMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SistemaSenhaMobile;API_SenhaMobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SistemaSenhaMobile:Clean;API_SenhaMobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SistemaSenhaMobile:Make;API_SenhaMobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

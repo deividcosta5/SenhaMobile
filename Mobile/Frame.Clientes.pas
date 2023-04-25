@@ -1,4 +1,4 @@
-unit Frame.Hospital;
+unit Frame.Clientes;
 
 interface
 
@@ -8,10 +8,9 @@ uses
   FMX.Objects, FMX.DialogService;
 
 type
-  TFrameHospital = class(TFrame)
+  TFrameClientes = class(TFrame)
     rectBackground: TRectangle;
     txtHospital: TText;
-    CircleLogo: TCircle;
     procedure rectBackgroundClick(Sender: TObject);
   private
     { Private declarations }
@@ -23,11 +22,22 @@ implementation
 
 {$R *.fmx}
 
-uses View.QRCode, View.Clientes;
+uses View.QRCode, View.Clientes, Controller.Clientes, Commons.Global;
 
-procedure TFrameHospital.rectBackgroundClick(Sender: TObject);
+procedure TFrameClientes.rectBackgroundClick(Sender: TObject);
+var
+  Cliente: TCliente;
 begin
-  if NOT Assigned(frmQRCode) then
+  for Cliente in ListaClientes do
+  begin
+    if Cliente.ID = Tag then
+    begin
+      if not Assigned(frmHospital.ClienteSelecionado) then
+        frmHospital.ClienteSelecionado := TCliente.Create(Cliente.ID, Cliente.Nome, Cliente.EnderecoAPI, Cliente.IDFirebase);
+      Break;
+    end;
+  end;
+  if not Assigned(frmQRCode) then
     Application.CreateForm(TfrmQRCode, frmQRCode);
 
   Application.MainForm := frmQRCode;

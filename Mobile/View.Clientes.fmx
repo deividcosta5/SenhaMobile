@@ -10,6 +10,9 @@ object frmHospital: TfrmHospital
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   OnShow = FormShow
   DesignerMasterStyle = 0
   object RectBackground: TRectangle
@@ -429,5 +432,11 @@ object frmHospital: TfrmHospital
           6D65061764656C657465627574746F6E746578747072657373656405436F6C6F
           720706636C61526564000000}
       end>
+    Left = 216
+    Top = 296
+  end
+  object NotificationCenter: TNotificationCenter
+    Left = 96
+    Top = 336
   end
 end
